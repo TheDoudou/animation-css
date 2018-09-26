@@ -11,7 +11,6 @@ body {
 		justify-content: space-around;
 		flex-wrap: wrap;
 		
-		
 		.b_ {
 			width: 300px;
 			height: 50px;
@@ -55,56 +54,59 @@ body {
 			transform: translateX(200px);
 		}
 	}
+	
 	.menu_section {
 		display: flex;
 		flex-wrap: wrap;
 		
-		ul { list-style:none; }
-		li {
-			display: flex;
-			flex-direction: row;
+		ul {
+			list-style:none;
 			
-			transition-property: transform, background-color, visibility, opacity;
-			transition-timing-function: ease-in;
-			
-			&:hover {
-				@for $i from 1 through 8 {
-					.menu_#{$i}_img_div { transition-duration: 1s; background-color: white; }
+			li {
+				display: flex;
+				flex-direction: row;
+				
+				transition-property: transform, background-color, visibility, opacity;
+				transition-timing-function: ease-in;
+				
+				&:hover {
+					@for $i from 1 through 8 {
+						.menu_#{$i}_img_div { transition-duration: 1s; background-color: white; }
+					}
+					
+					@for $i from 1 through 8 {
+						.menu_#{$i}_txt { transition-duration: 1s; transform: translateX(0px); visibility: visible; opacity: 1;}
+					}
+				}
+				
+				.menu_1_img_div {
+					padding: 25px 25px;
+					background-color: #383838;
+				}
+				
+				@for $i from 2 through 8 {
+					.menu_#{$i}_img_div {
+						padding: 25px 25px;
+						background-color: #4c4c4c;
+					}
 				}
 				
 				@for $i from 1 through 8 {
-					.menu_#{$i}_txt { transition-duration: 1s; transform: translateX(0px); visibility: visible; opacity: 1;}
+					.menu_#{$i}_txt {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background-color: #282828;
+						color: white;
+						width: 200px;
+						height: 100px;
+						opacity: 0;
+						visibility: hidden;
+						transform: translateX(-50%);
+					}
 				}
 			}
 		}
-		
-		.menu_1_img_div {
-			padding: 25px 25px;
-			background-color: #383838;
-		}
-		
-		@for $i from 2 through 8 {
-			.menu_#{$i}_img_div {
-				padding: 25px 25px;
-				background-color: #4c4c4c;
-			}
-		}
-		
-		@for $i from 1 through 8 {
-			.menu_#{$i}_txt {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				background-color: #282828;
-				color: white;
-				width: 200px;
-				height: 100px;
-				opacity: 0;
-				visibility: hidden;
-				transform: translateX(-50%);
-			}
-		}
-		
-
+			
 	}
 }

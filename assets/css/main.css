@@ -43,184 +43,184 @@ body {
     flex-wrap: wrap; }
     body .menu_section ul {
       list-style: none; }
-    body .menu_section li {
-      display: flex;
-      flex-direction: row;
-      transition-property: transform, background-color, visibility, opacity;
-      transition-timing-function: ease-in; }
-      body .menu_section li:hover .menu_1_img_div {
-        transition-duration: 1s;
-        background-color: white; }
-        body .menu_section li:hover .menu_2_img_div {
+      body .menu_section ul li {
+        display: flex;
+        flex-direction: row;
+        transition-property: transform, background-color, visibility, opacity;
+        transition-timing-function: ease-in; }
+        body .menu_section ul li:hover .menu_1_img_div {
           transition-duration: 1s;
           background-color: white; }
-        body .menu_section li:hover .menu_3_img_div {
-          transition-duration: 1s;
-          background-color: white; }
-        body .menu_section li:hover .menu_4_img_div {
-          transition-duration: 1s;
-          background-color: white; }
-        body .menu_section li:hover .menu_5_img_div {
-          transition-duration: 1s;
-          background-color: white; }
-        body .menu_section li:hover .menu_6_img_div {
-          transition-duration: 1s;
-          background-color: white; }
-        body .menu_section li:hover .menu_7_img_div {
-          transition-duration: 1s;
-          background-color: white; }
-        body .menu_section li:hover .menu_8_img_div {
-          transition-duration: 1s;
-          background-color: white; }
-        body .menu_section li:hover .menu_1_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-        body .menu_section li:hover .menu_2_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-        body .menu_section li:hover .menu_3_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-        body .menu_section li:hover .menu_4_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-        body .menu_section li:hover .menu_5_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-        body .menu_section li:hover .menu_6_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-        body .menu_section li:hover .menu_7_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-        body .menu_section li:hover .menu_8_txt {
-          transition-duration: 1s;
-          transform: translateX(0px);
-          visibility: visible;
-          opacity: 1; }
-    body .menu_section .menu_1_img_div {
-      padding: 25px 25px;
-      background-color: #383838; }
-    body .menu_section .menu_2_img_div {
-      padding: 25px 25px;
-      background-color: #4c4c4c; }
-    body .menu_section .menu_3_img_div {
-      padding: 25px 25px;
-      background-color: #4c4c4c; }
-    body .menu_section .menu_4_img_div {
-      padding: 25px 25px;
-      background-color: #4c4c4c; }
-    body .menu_section .menu_5_img_div {
-      padding: 25px 25px;
-      background-color: #4c4c4c; }
-    body .menu_section .menu_6_img_div {
-      padding: 25px 25px;
-      background-color: #4c4c4c; }
-    body .menu_section .menu_7_img_div {
-      padding: 25px 25px;
-      background-color: #4c4c4c; }
-    body .menu_section .menu_8_img_div {
-      padding: 25px 25px;
-      background-color: #4c4c4c; }
-    body .menu_section .menu_1_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
-    body .menu_section .menu_2_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
-    body .menu_section .menu_3_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
-    body .menu_section .menu_4_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
-    body .menu_section .menu_5_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
-    body .menu_section .menu_6_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
-    body .menu_section .menu_7_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
-    body .menu_section .menu_8_txt {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #282828;
-      color: white;
-      width: 200px;
-      height: 100px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-50%); }
+          body .menu_section ul li:hover .menu_2_img_div {
+            transition-duration: 1s;
+            background-color: white; }
+          body .menu_section ul li:hover .menu_3_img_div {
+            transition-duration: 1s;
+            background-color: white; }
+          body .menu_section ul li:hover .menu_4_img_div {
+            transition-duration: 1s;
+            background-color: white; }
+          body .menu_section ul li:hover .menu_5_img_div {
+            transition-duration: 1s;
+            background-color: white; }
+          body .menu_section ul li:hover .menu_6_img_div {
+            transition-duration: 1s;
+            background-color: white; }
+          body .menu_section ul li:hover .menu_7_img_div {
+            transition-duration: 1s;
+            background-color: white; }
+          body .menu_section ul li:hover .menu_8_img_div {
+            transition-duration: 1s;
+            background-color: white; }
+          body .menu_section ul li:hover .menu_1_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+          body .menu_section ul li:hover .menu_2_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+          body .menu_section ul li:hover .menu_3_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+          body .menu_section ul li:hover .menu_4_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+          body .menu_section ul li:hover .menu_5_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+          body .menu_section ul li:hover .menu_6_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+          body .menu_section ul li:hover .menu_7_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+          body .menu_section ul li:hover .menu_8_txt {
+            transition-duration: 1s;
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1; }
+        body .menu_section ul li .menu_1_img_div {
+          padding: 25px 25px;
+          background-color: #383838; }
+        body .menu_section ul li .menu_2_img_div {
+          padding: 25px 25px;
+          background-color: #4c4c4c; }
+        body .menu_section ul li .menu_3_img_div {
+          padding: 25px 25px;
+          background-color: #4c4c4c; }
+        body .menu_section ul li .menu_4_img_div {
+          padding: 25px 25px;
+          background-color: #4c4c4c; }
+        body .menu_section ul li .menu_5_img_div {
+          padding: 25px 25px;
+          background-color: #4c4c4c; }
+        body .menu_section ul li .menu_6_img_div {
+          padding: 25px 25px;
+          background-color: #4c4c4c; }
+        body .menu_section ul li .menu_7_img_div {
+          padding: 25px 25px;
+          background-color: #4c4c4c; }
+        body .menu_section ul li .menu_8_img_div {
+          padding: 25px 25px;
+          background-color: #4c4c4c; }
+        body .menu_section ul li .menu_1_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
+        body .menu_section ul li .menu_2_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
+        body .menu_section ul li .menu_3_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
+        body .menu_section ul li .menu_4_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
+        body .menu_section ul li .menu_5_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
+        body .menu_section ul li .menu_6_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
+        body .menu_section ul li .menu_7_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
+        body .menu_section ul li .menu_8_txt {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #282828;
+          color: white;
+          width: 200px;
+          height: 100px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateX(-50%); }
