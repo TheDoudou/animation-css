@@ -2,8 +2,15 @@
 	box-sizing: border-box;
 }
 
+@mixin flex_center() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 body {
 	background-color: gray;
+	
 	a { text-decoration: none; }
 	
 	.button_section {
@@ -16,9 +23,7 @@ body {
 			height: 50px;
 			border: white solid 5px;
 			color: white;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			@include flex_center;
 		}
 		
 		.b_1 {
@@ -93,9 +98,7 @@ body {
 				
 				@for $i from 1 through 8 {
 					.menu_#{$i}_txt {
-						display: flex;
-						align-items: center;
-						justify-content: center;
+						@include flex_center;
 						background-color: #282828;
 						color: white;
 						width: 200px;
@@ -107,6 +110,157 @@ body {
 				}
 			}
 		}
+	}
+	.star_wars_section {
+		background-color: black;
+		width: 1280px;
+		height: 720px;
+		@include flex_center;
+		overflow:hidden;
+		position: relative;
+		
+		.star_wars_title {
+			z-index: 2;
+			opacity: 0;
+		}
+		
+		.title {
+			font-size: 50px;
+			color: blue;
+		}
+		
+		.star_wars_bg {
+			z-index: 1;
+			position: absolute;
+			background-image: url("../img/bg.jpg"); width: 1280px; height: 720px;
+			opacity: 0;
+		}
+		
+		.logo {
+			z-index: 1;
+			position: absolute;
+			left: 275px;
+			top: 15px;
+			background-image: url("../img/becode.png"); width: 720px; height: 720px;
+			background-size: 720px 720px;
+			background-repeat: no-repeat;
+			opacity: 0;
+		}
+		
+		.text {
+			z-index: 2;
+			font-size: 70px;
+			color: yellow;
+			position: absolute;
+			left: 200px;
+			top: 640px;
+			width: 900px;
+			opacity: 1;
+		}
+		
+		
+		&:hover {
+
+			.star_wars_title {
+				animation-name: title_anim;
+				animation-duration: 5s;
+				-webkit-animation-name: title_anim;
+				-webkit-animation-duration: 5s;
+			}
 			
+			@keyframe title_anim {
+				0% { opacity: 0; }
+				10% { opacity: 1; }
+				90% { opacity: 1; }
+				100% { opacity: 0; }
+			}
+			
+			@-webkit-keyframes title_anim {
+				0% { opacity: 0; }
+				10% { opacity: 1; }
+				90% { opacity: 1; }
+				100% { opacity: 0; }
+			}
+			
+			.star_wars_bg {
+				animation-name: background_anim;
+				animation-duration: 40s;
+				animation-delay: 7s;
+				-webkit-animation-name: background_anim;
+				-webkit-animation-duration: 40s;
+				-webkit-animation-delay: 5s;
+			}
+			
+			@keyframe background_anim {
+				5% { opacity: 1; }
+				100% { opacity: 1; }
+			}
+			
+			@-webkit-keyframes background_anim {
+				5% { opacity: 1; }
+				100% { opacity: 1; }
+			}
+			
+			.logo {
+				animation-name: logo_anim;
+				animation-duration: 9s;
+				animation-delay: 7s;
+				-webkit-animation-name: logo_anim;
+				-webkit-animation-duration: 9s;
+				-webkit-animation-delay: 7s;
+			}
+			
+			@keyframe logo_anim {
+				0% { opacity: 1; transform: scale3d(1, 1, 1); }
+				90% { opacity: 1; }
+				100% { opacity: 0; transform: scale3d(0.1, 0.1, 0.1);}
+			}
+			
+			@-webkit-keyframes logo_anim {
+				0% { opacity: 1; transform: scale3d(1, 1, 1); }
+				95% { opacity: 1; }
+				100% { opacity: 0; transform: scale3d(0.1, 0.1, 0.1);}
+			}
+			
+			.text {
+				animation-name: text_anim;
+				animation-duration: 10s;
+				animation-delay: 1s;
+				-webkit-animation-name: text_anim;
+				-webkit-animation-duration: 10s;
+				-webkit-animation-delay: 1s;
+			}
+			
+			@keyframe text_anim {
+				0% {
+					transform: rotateX(45deg) translateY(-700px);
+				}
+				100% {
+					transform: rotateX(45deg) translateY(50px);				}
+			}
+			
+			@-webkit-keyframes text_anim {
+				0% {
+					transform: rotateX(45deg) translateY(-700px);
+				100% {
+					transform: rotateX(45deg) translateY(50px);			}
+				}
+			}
+		}
+	}
+	
+	.card_section {
+		box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
+		width: 20%;
+		border-radius: 5px;
+		background-color: #f0f0f0;
+		
+		img {
+			border-radius: 5px 5px 0 0;
+		}
+		
+		&:hover {
+		
+		}
 	}
 }

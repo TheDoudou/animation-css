@@ -14,7 +14,6 @@ if ($md5_scss != $md5_data) {
 	$file_data = fopen("assets/data/data_md5", "w");
 	fwrite($file_css, $css);
 	fwrite($file_data, $md5_scss);
-	print_r("Compile");
 }
 
 ?>
@@ -49,6 +48,48 @@ if ($md5_scss != $md5_data) {
 					<li><div class="menu_7_img_div"><img class="menu_7_img" src="assets/img/chiken-head.svg" height="42" width="42"></div><div class="menu_7_txt">Chiken</div></li>
 					<li><div class="menu_8_img_div"><img class="menu_8_img" src="assets/img/hand.svg" height="42" width="42"></div><div class="menu_8_txt">Contact</div></li>
 				</ul>
+			</div>
+		</div><hr>
+		<div class="star_wars">
+			<h2 style="color:white">Star Wars</h2><hr>
+			<div class="star_wars_section">
+				<div class="star_wars_title">
+					<p class="title">A long time ago in a galaxy far,</p>
+					<p class="title">far away. . . .</p>
+				</div>
+				<div class="star_wars_bg"></div>
+				<div class="logo"></div>
+				<div class="text">
+					<center><p class="text_title">La vim ou la mort</p></center>
+					<p class="text_p">August croyait aux théories des univers multiples, il affirmait : " C'est de la physique pur tu veux voir ma machine ? " . Bruce lui n'y croyait pas trop : " Mais comment est-ce possible ? " .
+
+Suite à une longue discussion Bruce décide de suivre August dans son aventure. Il rentre tous les deux dans la machine, un bruit sourd s'en dégage Grrrrrrrrr Clac.
+
+Et les voilà perdu dans le vim entre les mondes.
+
+"Mais comment sortir de là", s'exclame Bruce ...
+
+"Je ne sais pas du tout!! Que s'est il passé?" demanda August.
+
+Les deux personnages voulèrent sortir de la machine, mais il y a un problème..
+
+La machine est dans l'espace ! s'exclamèrent August et Bruce.
+
+Plus le temps passait plus l'air se rafraichissait, et le plus le bruit de la vitre qui se brisait s'intensifiait.
+
+C'est a ce moment qu'apparu ..</p>
+				</div>
+			</div>
+		</div><hr>
+		<div class="card">
+			<h2 style="color:white">Card</h2><hr>
+			<div class="card_section">
+				<img src="assets/img/mokona.jpg" alt="Avatar" style="width:100%">
+				<div class="card_txt">
+					<p class="card_photo">PHOTOS</p>
+					<h4><b>TheDoudou</b></h4> 
+					<p>Interior Designer</p> 
+				</div>
 			</div>
 		</div>
 	</body>

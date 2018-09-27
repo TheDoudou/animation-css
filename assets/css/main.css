@@ -15,8 +15,8 @@ body {
       border: white solid 5px;
       color: white;
       display: flex;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
     body .button_section .b_1 {
       transition-property: background-color, color;
       transition-duration: 1s; }
@@ -224,3 +224,138 @@ body {
           opacity: 0;
           visibility: hidden;
           transform: translateX(-50%); }
+  body .star_wars_section {
+    background-color: black;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative; }
+    body .star_wars_section .star_wars_title {
+      z-index: 2;
+      opacity: 0; }
+    body .star_wars_section .title {
+      font-size: 50px;
+      color: blue; }
+    body .star_wars_section .star_wars_bg {
+      z-index: 1;
+      position: absolute;
+      background-image: url("../img/bg.jpg");
+      width: 1280px;
+      height: 720px;
+      opacity: 0; }
+    body .star_wars_section .logo {
+      z-index: 1;
+      position: absolute;
+      left: 275px;
+      top: 15px;
+      background-image: url("../img/becode.png");
+      width: 720px;
+      height: 720px;
+      background-size: 720px 720px;
+      background-repeat: no-repeat;
+      opacity: 0; }
+    body .star_wars_section .text {
+      z-index: 2;
+      font-size: 70px;
+      color: yellow;
+      position: absolute;
+      left: 200px;
+      top: 640px;
+      width: 900px;
+      opacity: 1; }
+    body .star_wars_section:hover .star_wars_title {
+      animation-name: title_anim;
+      animation-duration: 5s;
+      -webkit-animation-name: title_anim;
+      -webkit-animation-duration: 5s; }
+      @keyframe title_anim {
+  body .star_wars_section:hover 0% {
+    opacity: 0; }
+  body .star_wars_section:hover 10% {
+    opacity: 1; }
+  body .star_wars_section:hover 90% {
+    opacity: 1; }
+  body .star_wars_section:hover 100% {
+    opacity: 0; } }
+
+@-webkit-keyframes title_anim {
+        0% {
+          opacity: 0; }
+        10% {
+          opacity: 1; }
+        90% {
+          opacity: 1; }
+        100% {
+          opacity: 0; } }
+  body .star_wars_section:hover .star_wars_bg {
+    animation-name: background_anim;
+    animation-duration: 40s;
+    animation-delay: 7s;
+    -webkit-animation-name: background_anim;
+    -webkit-animation-duration: 40s;
+    -webkit-animation-delay: 5s; }
+  @keyframe background_anim {
+      body .star_wars_section:hover 5% {
+        opacity: 1; }
+      body .star_wars_section:hover 100% {
+        opacity: 1; } }
+
+@-webkit-keyframes background_anim {
+        5% {
+          opacity: 1; }
+        100% {
+          opacity: 1; } }
+  body .star_wars_section:hover .logo {
+    animation-name: logo_anim;
+    animation-duration: 9s;
+    animation-delay: 7s;
+    -webkit-animation-name: logo_anim;
+    -webkit-animation-duration: 9s;
+    -webkit-animation-delay: 7s; }
+  @keyframe logo_anim {
+      body .star_wars_section:hover 0% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1); }
+      body .star_wars_section:hover 90% {
+        opacity: 1; }
+      body .star_wars_section:hover 100% {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1); } }
+
+@-webkit-keyframes logo_anim {
+        0% {
+          opacity: 1;
+          transform: scale3d(1, 1, 1); }
+        95% {
+          opacity: 1; }
+        100% {
+          opacity: 0;
+          transform: scale3d(0.1, 0.1, 0.1); } }
+  body .star_wars_section:hover .text {
+    animation-name: text_anim;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    -webkit-animation-name: text_anim;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-delay: 1s; }
+  @keyframe text_anim {
+      body .star_wars_section:hover 0% {
+        transform: rotateX(45deg) translateY(-700px); }
+      body .star_wars_section:hover 100% {
+        transform: rotateX(45deg) translateY(50px); } }
+
+@-webkit-keyframes text_anim {
+        0% {
+          transform: rotateX(45deg) translateY(-700px); }
+          0% 100% {
+            transform: rotateX(45deg) translateY(50px); } }
+  body .card_section {
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.2);
+    width: 20%;
+    border-radius: 5px;
+    background-color: #f0f0f0; }
+  body .card_section img {
+    border-radius: 5px 5px 0 0; }
