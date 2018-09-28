@@ -63,7 +63,7 @@ if ($md5_scss != $md5_data) {
 				<div class="star_wars_bg"></div>
 				<div class="logo"></div>
 				<div class="text">
-					<center><p class="text_title">La vim ou la mort</p></center>
+					<p class="text_title">La vim ou la mort</p>
 					<!-- Revoir le découpage du texte -->
 					<p class="text_p">August croyait aux théories des univers multiples, il affirmait : " C'est de la physique pur tu veux voir ma machine ? " . Bruce lui n'y croyait pas trop : " Mais comment est-ce possible ? " .
 									Suite à une longue discussion Bruce décide de suivre August dans son aventure. Il rentre tous les deux dans la machine, un bruit sourd s'en dégage Grrrrrrrrr Clac.
@@ -87,19 +87,22 @@ if ($md5_scss != $md5_data) {
 		<div class="card">
 			<h2 style="color:white">Card</h2><hr>
 			<div class="card_section">
+				<div class="cache_misere"></div>
 				<div class="card_date">
 					<div class="card_month">Aug</div>
 					<div class="card_day">15</div>
 				</div>
-				<img src="assets/img/mokona.jpg" alt="">
+				<img src="assets/img/mokona.jpg" alt="mokona">
 				<div class="card_content">
-					<div class="card_category">PHOTOS</div>
-					<h2 class="card_title">TheDoudou</h2>
-					<h5 class="card_sub_title">An upcoming superpower</h5>
-					<p class="card_description">Tu comprends, si vraiment tu veux te rappeler des souvenirs de ton perroquet, il faut toute la splendeur du aware et parfois c'est bon parfois c'est pas bon. C'est cette année que j'ai eu la révélation !</p>
+					<div class="card_move">
+						<div class="card_category">PHOTOS</div>
+						<h2 class="card_title">TheDoudou</h2>
+						<h3 class="card_sub_title">An upcoming superpower</h3>
+						<p class="card_description">Tu comprends, si vraiment tu veux te rappeler des souvenirs de ton perroquet, il faut toute la splendeur du aware et parfois c'est bon parfois c'est pas bon. C'est cette année que j'ai eu la révélation !</p>
+					</div>
 					<div class="card_infos">
-						<span class="card_date"> 6 mins ago</span>
-						<span class="card_comm"> 39 comments</span>
+						<span class="card_info_date"> 6 mins ago</span>
+						<span class="card_info_comm"> 39 comments</span>
 					</div>
 				</div>
 			</div>
