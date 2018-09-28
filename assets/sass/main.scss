@@ -146,6 +146,10 @@ body {
 			background-repeat: no-repeat;
 			opacity: 0;
 		}
+		.text_title {
+			display: flex;
+			justify-content: center;
+		}
 		
 		.text {
 			z-index: 2;
@@ -273,18 +277,118 @@ body {
 	
 	.card_section {
 		box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
-		width: 20%;
+		width: 300px;
 		border-radius: 5px;
 		background-color: #f0f0f0;
+		position: relative;
+		left: 5%;
+		transition-property: box-shadow;
+		transition-duration: 0s;
+		transition-timing-function: ease-in;
+		overflow: hidden;
 		
 		img {
+			z-index: 3;
 			border-radius: 5px 5px 0 0;
 			height: 100%;
 			width: 100%;
+			transition-property: transform;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in;
+		}
+		
+		.card_date {
+			position: absolute;
+			@include flex_center;
+			flex-direction: column;
+			margin: 10px;
+			width: 50px;
+			height: 50px;
+			top: 5px;
+			right: 10px;
+			background: red;
+			border-radius: 100px;
+		}
+		
+		.card_content {
+			top: 5px;
+		}
+		
+		.card_category {
+			position: absolute;
+			transform: translateY(-25px);
+			@include flex_center;
+			background-color: red;
+			width: 90px;
+			height: 30px;
+		}
+		
+		.card_move {
+			z-index: 1;
+			background-color: #f0f0f0;
+			transform: translateY(-30px);
+			transition-property: transform;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in;
+		}
+		
+		.card_title {
+			padding-top: 5px;
+		}
+		
+		.card_sub_title {
+			color: red;
+		}
+		
+		.cache_misere {
+			z-index: 2;
+			transform: translateX(-300px);
+			background-color: #f0f0f0;
+			position: absolute;
+			height: 35px;
+			width: 300px;
+			top: 272px;
+			transition-property: transform;
+			transition-duration: 0.1s;
+			transition-timing-function: ease-in;
+		}
+		
+		.card_description {
+			position: absolute;
+			display: none;
+			visibility: 0;
+			transition-property: display, visibility;
+			transition-duration: 0.2s;
+			transition-timing-function: ease-in;
+			background-color: #f0f0f0;
+		}
+		
+		.card_infos {
+			display: flex;
+			justify-content: space-between;
+			margin: 10px 15px 10px 10px;
+			transform: translateY(-15px);
 		}
 		
 		&:hover {
-		
+			box-shadow: 0 0px 25px 0 rgba(0,0,0,0.6);
+			
+			.card_move {
+				transform: translateY(-150px);
+			}
+			
+			.card_description {
+				display: block;
+				visibility: 1;
+			}
+			
+			.cache_misere {
+				transform: translateX(0px);
+			}
+			
+			img {
+				transform: scale(1.4);
+			}
 		}
 	}
 }
