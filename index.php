@@ -22,13 +22,13 @@ if ($md5_scss != $md5_data) {
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<title>Animation SASS</title>
 		<link rel="stylesheet" href="assets/css/main.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="button">
-			<h2 style="color:white">Bouton avec transition<hr></h2>
+			<h2 style="color:white">Bouton - <a href="https://github.com/TheDoudou/animation-css">Repo git</a><hr></h2>
 			<div class="button_section">
 				<a href="https://fr.wikipedia.org/wiki/Poulet"><div class="b_ b_1">Coucou les poulets</div></a>
 				<a href="https://fr.wikipedia.org/wiki/Poulet"><div class="b_ b_2">Coucou les poulets</div></a>
@@ -52,7 +52,10 @@ if ($md5_scss != $md5_data) {
 		</div><hr>
 		<div class="star_wars">
 			<h2 style="color:white">Star Wars</h2><hr>
-			<div class="star_wars_section">
+			<div class="star_wars_section" id="animation">
+				<audio preload="auto" id="audio">
+					<source src="assets/son/Star_Wars.mp3"></source>
+				</audio>
 				<div class="star_wars_title">
 					<p class="title">A long time ago in a galaxy far,</p>
 					<p class="title">far away. . . .</p>
@@ -61,37 +64,51 @@ if ($md5_scss != $md5_data) {
 				<div class="logo"></div>
 				<div class="text">
 					<center><p class="text_title">La vim ou la mort</p></center>
+					<!-- Revoir le découpage du texte -->
 					<p class="text_p">August croyait aux théories des univers multiples, il affirmait : " C'est de la physique pur tu veux voir ma machine ? " . Bruce lui n'y croyait pas trop : " Mais comment est-ce possible ? " .
+									Suite à une longue discussion Bruce décide de suivre August dans son aventure. Il rentre tous les deux dans la machine, un bruit sourd s'en dégage Grrrrrrrrr Clac.
 
-Suite à une longue discussion Bruce décide de suivre August dans son aventure. Il rentre tous les deux dans la machine, un bruit sourd s'en dégage Grrrrrrrrr Clac.
+									Et les voilà perdu dans le vim entre les mondes.
 
-Et les voilà perdu dans le vim entre les mondes.
+									"Mais comment sortir de là", s'exclame Bruce ...
 
-"Mais comment sortir de là", s'exclame Bruce ...
+									"Je ne sais pas du tout!! Que s'est il passé?" demanda August.
 
-"Je ne sais pas du tout!! Que s'est il passé?" demanda August.
+									Les deux personnages voulèrent sortir de la machine, mais il y a un problème..
 
-Les deux personnages voulèrent sortir de la machine, mais il y a un problème..
+									La machine est dans l'espace ! s'exclamèrent August et Bruce.
 
-La machine est dans l'espace ! s'exclamèrent August et Bruce.
+									Plus le temps passait plus l'air se rafraichissait, et le plus le bruit de la vitre qui se brisait s'intensifiait.
 
-Plus le temps passait plus l'air se rafraichissait, et le plus le bruit de la vitre qui se brisait s'intensifiait.
-
-C'est a ce moment qu'apparu ..</p>
+									C'est a ce moment qu'apparu ...</p>
 				</div>
 			</div>
 		</div><hr>
 		<div class="card">
 			<h2 style="color:white">Card</h2><hr>
 			<div class="card_section">
-				<img src="assets/img/mokona.jpg" alt="Avatar" style="width:100%">
-				<div class="card_txt">
-					<p class="card_photo">PHOTOS</p>
-					<h4><b>TheDoudou</b></h4> 
-					<p>Interior Designer</p> 
+				<div class="card_date">
+					<div class="card_month">Aug</div>
+					<div class="card_day">15</div>
+				</div>
+				<img src="assets/img/mokona.jpg" alt="">
+				<div class="card_content">
+					<div class="card_category">PHOTOS</div>
+					<h2 class="card_title">TheDoudou</h2>
+					<h5 class="card_sub_title">An upcoming superpower</h5>
+					<p class="card_description">Tu comprends, si vraiment tu veux te rappeler des souvenirs de ton perroquet, il faut toute la splendeur du aware et parfois c'est bon parfois c'est pas bon. C'est cette année que j'ai eu la révélation !</p>
+					<div class="card_infos">
+						<span class="card_date"> 6 mins ago</span>
+						<span class="card_comm"> 39 comments</span>
+					</div>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			var StarWarsAudio = $("#audio")[0];
+			$("#animation").mouseenter(function() { StarWarsAudio.play(); });
+			$("#animation").mouseleave(function() { StarWarsAudio.pause(); StarWarsAudio.currentTime = 0; });
+		</script>
 	</body>
 </html>
 
